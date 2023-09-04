@@ -10,80 +10,45 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <LinearLayout
-            android:id="@+id/navigation"
+        <TextView
+            android:id="@+id/title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/frame_578"
-            android:minWidth="100dp">
+            android:gravity="center_horizontal|top"
+            android:maxHeight="100dp"
+            android:text="@string/title"
+            android:textAppearance="@style/title"/>
 
-            <TextView
-                android:id="@+id/title"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal|top"
-                android:lineSpacingExtra="0sp"
-                android:maxHeight="100dp"
-                android:text="@string/title"
-                android:textAppearance="@style/title"
-                android:translationY="-0.06sp" />
-
-        </LinearLayout>
-
-        <RelativeLayout
+        <LinearLayout
             android:id="@+id/frame_578"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/frame_579">
-
+            android:background="@drawable/frame_579"
+            android:orientation="vertical">
 
             <View
                 android:id="@+id/image_20"
-                android:layout_width="343dp"
-                android:layout_height="257dp"
-                android:layout_centerHorizontal="true"
-                android:background="@drawable/hotel"/>
-
-            <TextView
-                android:id="@+id/hotel_name"
-                android:layout_width="343dp"
-                android:layout_height="26dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="320dp"
-                android:gravity="top"
-                android:lineSpacingExtra="0sp"
-                android:text="@string/title"
-                android:textAppearance="@style/title"
-                android:translationY="-0.07sp" />
-
-            <TextView
-                android:id="@+id/address"
-                android:layout_width="343dp"
-                android:layout_height="17dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="348dp"
-                android:gravity="top"
-                android:lineSpacingExtra="0sp"
-                android:text="@string/address"
-                android:textAppearance="@style/address"
-                android:translationY="-0.05sp" />
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/hotel"
+                android:paddingTop="16dp" />
 
             <LinearLayout
                 android:id="@+id/frame_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="275dp"
+                android:layout_marginTop="16dp"
                 android:background="@drawable/frame_1"
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:layout_width="15dp"
-                    android:layout_height="15dp"
+                    android:layout_width="19dp"
+                    android:layout_height="19dp"
                     android:layout_gravity="center_vertical"
                     android:layout_marginStart="5dp"
                     android:contentDescription="@string/star"
@@ -93,7 +58,8 @@
                     android:id="@+id/rating"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="3dp"
                     android:height="19sp"
                     android:text="@string/rating"
                     android:textAppearance="@style/rating" />
@@ -102,20 +68,50 @@
 
 
             <TextView
-                android:id="@+id/cost"
+            android:id="@+id/hotel_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:gravity="top"
+            android:text="@string/title"
+            android:textAppearance="@style/name"/>
+
+            <TextView
+                android:id="@+id/address"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="378dp"
+                android:layout_marginTop="8dp"
                 android:gravity="top"
-                android:lineSpacingExtra="0sp"
-                android:text="@string/cost"
-                android:textAppearance="@style/title"
-                android:translationY="-0.1sp" />
+                android:text="@string/address"
+                android:textAppearance="@style/address"/>
 
-        </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/cost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/cost"
+                    android:textAppearance="@style/cost"/>
+
+                <TextView
+                    android:id="@+id/cost2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/cost2"
+                    android:textAppearance="@style/cost2"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
 
         <LinearLayout
             android:id="@+id/frame_579"
@@ -168,12 +164,11 @@
                         android:layout_height="wrap_content"
                         android:background="@drawable/frame_2"
                         android:gravity="center_horizontal|top"
-                        android:lineSpacingExtra="0sp"
                         android:paddingHorizontal="16dp"
                         android:paddingVertical="2dp"
+                        android:layout_marginStart="8dp"
                         android:text="@string/info2"
-                        android:textAppearance="@style/info"
-                        android:translationY="-0.05sp" />
+                        android:textAppearance="@style/info" />
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -202,12 +197,11 @@
                         android:layout_height="wrap_content"
                         android:background="@drawable/frame_2"
                         android:gravity="center_horizontal|top"
-                        android:lineSpacingExtra="0sp"
                         android:paddingHorizontal="16dp"
                         android:paddingVertical="2dp"
+                        android:layout_marginStart="8dp"
                         android:text="@string/info4"
-                        android:textAppearance="@style/info"
-                        android:translationY="-0.05sp" />
+                        android:textAppearance="@style/info"/>
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -228,24 +222,30 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
                 android:background="@drawable/frame_582"
+                android:layout_gravity="center"
                 android:orientation="vertical">
 
                 <androidx.appcompat.widget.LinearLayoutCompat
                     android:id="@+id/group_3"
-                    android:layout_width="313dp"
+                    android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
                     android:layout_marginTop="5dp"
                     android:clickable="true"
-                    android:focusable="true">
+                    android:focusable="true"
+                    android:orientation="horizontal">
 
                     <ImageView
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:layout_gravity="center_vertical"
                         android:contentDescription="@string/emoji"
-                        android:src="@drawable/emoji_happy" />
+                        android:src="@drawable/emoji_happy"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -258,10 +258,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="top"
-                            android:lineSpacingExtra="0sp"
                             android:text="@string/conveniences"
-                            android:textAppearance="@style/aboutInfo"
-                            android:translationY="-0.05sp" />
+                            android:textAppearance="@style/aboutInfo" />
 
                         <TextView
                             android:id="@+id/necessary1"
@@ -278,26 +276,28 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:layout_gravity="center_vertical"
-                        android:layout_marginStart="120dp"
+                        android:layout_marginStart="100dp"
                         android:contentDescription="@string/arrow"
-                        android:src="@drawable/arrow" />
+                        android:src="@drawable/arrow"/>
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
                 <View
                     android:id="@+id/vector_56"
-                    android:layout_width="300dp"
+                    android:layout_width="match_parent"
                     android:layout_height="3dp"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="10dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="30dp"
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/vector_56" />
 
                 <androidx.appcompat.widget.LinearLayoutCompat
                     android:id="@+id/group_4"
-                    android:layout_width="313dp"
+                    android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:layout_gravity="center"
+                    android:layout_gravity="center_vertical"
                     android:layout_marginTop="5dp"
                     android:clickable="true"
                     android:focusable="true">
@@ -340,7 +340,7 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:layout_gravity="center_vertical"
-                        android:layout_marginStart="120dp"
+                        android:layout_marginStart="100dp"
                         android:contentDescription="@string/arrow"
                         android:src="@drawable/arrow" />
 
@@ -348,7 +348,9 @@
 
                 <View
                     android:id="@+id/vector_561"
-                    android:layout_width="300dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="30dp"
                     android:layout_height="3dp"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="10dp"
@@ -357,10 +359,10 @@
 
                 <androidx.appcompat.widget.LinearLayoutCompat
                     android:id="@+id/group_5"
-                    android:layout_width="313dp"
+                    android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="15dp"
                     android:clickable="true"
                     android:focusable="true">
 
@@ -384,8 +386,7 @@
                             android:layout_gravity="top"
                             android:lineSpacingExtra="0sp"
                             android:text="@string/excluded"
-                            android:textAppearance="@style/aboutInfo"
-                            android:translationY="-0.05sp" />
+                            android:textAppearance="@style/aboutInfo"/>
 
                         <TextView
                             android:id="@+id/necessary3"
@@ -402,7 +403,7 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:layout_gravity="center_vertical"
-                        android:layout_marginStart="110dp"
+                        android:layout_marginStart="88dp"
                         android:contentDescription="@string/arrow"
                         android:src="@drawable/arrow" />
 
@@ -419,6 +420,7 @@
             android:background="@drawable/bar">
 
             <Button
+                android:id="@+id/chooseBtn"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"

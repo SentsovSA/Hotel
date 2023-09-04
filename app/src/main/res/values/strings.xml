@@ -18,4 +18,9 @@
     <string name="included">Что включено</string>
     <string name="excluded">Что не включено</string>
     <string name="choose">К выбору номера</string>
+    <string name="cost2">за тур с перелётом</string>
+    <string name="chooseRoom">Выбрать номер</string>
+    <string name="allInclusive">Все включено</string>
+    <string name="Conditioner">Кондиционер</string>
+    <string name="sevenNights">за 7 ночей с перелетом</string>
 </resources>

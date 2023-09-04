@@ -5,12 +5,14 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import com.example.hotel.viewModels.HotelViewModel
 import com.example.hotel.R
 
-//прокидывать валюту по коду валюты
+//прокидывать валюту по коду
 
 class HotelFragment : Fragment() {
+    private lateinit var chooseBtn: Button
 
     companion object {
         fun newInstance() = HotelFragment()
@@ -27,5 +29,10 @@ class HotelFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        chooseBtn = requireView().findViewById(R.id.chooseBtn)
+        val roomFragment = RoomFragment()
+        chooseBtn.setOnClickListener{
+            parentFragmentManager.beginTransaction().add(R.id.fragment_container, roomFragment).commit()
+        }
     }
 }
