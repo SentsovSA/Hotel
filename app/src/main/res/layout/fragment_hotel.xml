@@ -74,7 +74,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:gravity="top"
-            android:text="@string/title"
+            android:text="@string/steigenberger_makadi"
             android:textAppearance="@style/name"/>
 
             <TextView
@@ -212,10 +212,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
-                android:lineSpacingExtra="0sp"
                 android:text="@string/aboutInfo"
-                android:textAppearance="@style/aboutInfo"
-                android:translationY="-0.05sp" />
+                android:textAppearance="@style/aboutInfo" />
 
             <LinearLayout
                 android:id="@+id/frame_582"

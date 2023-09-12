@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageButton
 import com.example.hotel.viewModels.HotelViewModel
 import com.example.hotel.R
 
@@ -31,8 +32,11 @@ class HotelFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         chooseBtn = requireView().findViewById(R.id.chooseBtn)
         val roomFragment = RoomFragment()
-        chooseBtn.setOnClickListener{
-            parentFragmentManager.beginTransaction().add(R.id.fragment_container, roomFragment).commit()
+       chooseBtn.setOnClickListener{
+            val transaction = activity?.supportFragmentManager?.beginTransaction()
+            transaction?.replace(R.id.fragment_container, roomFragment)
+            transaction?.addToBackStack("roomFragment")
+            transaction?.commit()
         }
     }
 }

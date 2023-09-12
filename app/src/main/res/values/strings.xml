@@ -23,4 +23,8 @@
     <string name="allInclusive">Все включено</string>
     <string name="Conditioner">Кондиционер</string>
     <string name="sevenNights">за 7 ночей с перелетом</string>
+    <string name="steigenberger_makadi">Steigenberger Makadi</string>
+    <string name="back_arrow_btn">back_arrow_btn</string>
+    <string name="roompic">roomPic</string>
+    <string name="value">+7 (951) 555–99–00</string>
 </resources>

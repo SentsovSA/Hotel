@@ -7,6 +7,13 @@
     tools:context=".views.RoomFragment"
     android:background="@drawable/background">
 
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,19 +23,29 @@
             android:id="@+id/tab1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
             android:background="@drawable/frame_579"
             android:orientation="vertical">
 
-        <View
-            android:id="@+id/image1"
-            android:layout_width="400dp"
-            android:layout_height="300dp"
-            android:layout_gravity="center"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:background="@drawable/roompic"
-            android:paddingTop="16dp" />
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                app:cardCornerRadius="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp">
+
+                <ImageView
+                    android:id="@+id/image1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/roompic"
+                    android:contentDescription="@string/roompic" />
+
+            </androidx.cardview.widget.CardView>
+
+
             <TextView
                 android:id="@+id/tab1room"
                 android:layout_width="wrap_content"
@@ -118,15 +135,24 @@
             android:orientation="vertical"
             android:layout_marginTop="10dp">
 
-            <View
-                android:id="@+id/image2"
-                android:layout_width="400dp"
-                android:layout_height="300dp"
-                android:layout_gravity="center"
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                app:cardCornerRadius="8dp"
                 android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
-                android:background="@drawable/roompic"
-                android:paddingTop="16dp" />
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp">
+
+                <ImageView
+                    android:id="@+id/image2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/roompic"
+                    android:contentDescription="@string/roompic" />
+
+            </androidx.cardview.widget.CardView>
             <TextView
                 android:id="@+id/tab2Room"
                 android:layout_width="wrap_content"
@@ -216,15 +242,24 @@
             android:orientation="vertical"
             android:layout_marginTop="10dp">
 
-            <View
-                android:id="@+id/image3"
-                android:layout_width="400dp"
-                android:layout_height="300dp"
-                android:layout_gravity="center"
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                app:cardCornerRadius="8dp"
                 android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
-                android:background="@drawable/roompic"
-                android:paddingTop="16dp" />
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp">
+
+                <ImageView
+                    android:id="@+id/image3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/roompic"
+                    android:contentDescription="@string/roompic" />
+
+            </androidx.cardview.widget.CardView>
             <TextView
                 android:id="@+id/tab3Room"
                 android:layout_width="wrap_content"
@@ -307,5 +342,7 @@
         </LinearLayout>
 
     </TableLayout>
+
+</LinearLayout>
 
 </ScrollView>
