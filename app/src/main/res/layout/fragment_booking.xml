@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:mask="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/background"
     tools:context=".views.RoomFragment">
 
@@ -43,7 +43,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginStart="3dp"
+                    android:layout_marginStart="10dp"
                     android:height="19sp"
                     android:text="@string/rating"
                     android:textAppearance="@style/rating" />
@@ -83,6 +83,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:paddingBottom="10dp"
                 android:baselineAligned="false">
 
                 <LinearLayout
@@ -96,49 +97,49 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Вылет из"
+                        android:text="@string/departing"
                         android:textAppearance="@style/cost2" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
-                        android:text="Страна, город"
+                        android:text="@string/country_city"
                         android:textAppearance="@style/cost2" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
-                        android:text="Даты"
+                        android:text="@string/dates_text"
                         android:textAppearance="@style/cost2" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
-                        android:text="Кол-во ночей"
+                        android:text="@string/nights"
                         android:textAppearance="@style/cost2" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
-                        android:text="Отель"
+                        android:text="@string/title"
                         android:textAppearance="@style/cost2" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
-                        android:text="Номер"
+                        android:text="@string/room"
                         android:textAppearance="@style/cost2" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
-                        android:text="Питание"
+                        android:text="@string/feeding"
                         android:textAppearance="@style/cost2" />
 
                 </LinearLayout>
@@ -155,7 +156,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
-                        android:text="Санкт-Петербург"
+                        android:text="@string/saint_p"
                         android:textAppearance="@style/aboutInfo" />
 
                     <TextView
@@ -163,7 +164,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
-                        android:text="Египет, Хургада"
+                        android:text="@string/egypt_hugarda"
                         android:textAppearance="@style/aboutInfo" />
 
                     <TextView
@@ -171,7 +172,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
-                        android:text="19.09.2023 – 27.09.2023"
+                        android:text="@string/dates"
                         android:textAppearance="@style/aboutInfo" />
 
                     <TextView
@@ -179,7 +180,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
-                        android:text="7 ночей"
+                        android:text="@string/seven_nights"
                         android:textAppearance="@style/aboutInfo" />
 
                     <TextView
@@ -187,7 +188,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
-                        android:text="Steigenberger Makadi"
+                        android:text="@string/steigenberger_makadi"
                         android:textAppearance="@style/aboutInfo" />
 
                     <TextView
@@ -195,7 +196,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
-                        android:text="Стандартный с видом на бассейн или сад"
+                        android:text="@string/standart_text"
                         android:textAppearance="@style/aboutInfo" />
 
                     <TextView
@@ -203,7 +204,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
-                        android:text="Все включено"
+                        android:text="@string/all_inclusive"
                         android:textAppearance="@style/aboutInfo" />
 
                 </LinearLayout>
@@ -217,6 +218,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_marginTop="10dp"
+            android:paddingBottom="10dp"
             android:background="@drawable/frame_579">
 
             <TextView
@@ -225,44 +227,198 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:gravity="top"
-                android:text="Информация о покупателе"
+                android:text="@string/customer_info_text"
                 android:textAppearance="@style/name" />
 
             <RelativeLayout
                 android:id="@+id/fields_row_"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="16dp"
+                android:layout_gravity="start"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
                 android:background="@drawable/fields_row">
 
                 <TextView
-                    android:id="@+id/some_id"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_alignParentTop="true"
                     android:layout_marginTop="10dp"
-                    android:text="Номер телефона"
+                    android:text="@string/phone_number"
                     android:textAppearance="@style/fieldInfo"
-                    android:lineSpacingExtra="0sp"
                     android:gravity="center_vertical"
                     />
 
-                <!--<br.com.sapereaude.maskedEditText.MaskedEditText
-                    android:id="@+id/value"
+                <EditText
+                    android:id="@+id/phone_number_input"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="16dp"
+                    android:layout_height="48dp"
                     android:layout_marginTop="24dp"
                     android:background="#F6F6F9"
                     android:gravity="center_vertical"
                     android:inputType="phone"
                     android:text="@string/value"
-                    android:textAppearance="@style/value" />-->
+                    android:textAppearance="@style/value" />
 
             </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
+                android:layout_gravity="center"
+                android:paddingStart="10dp"
+                android:paddingEnd="20dp"
+                android:background="@drawable/fields_row">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingStart="13dp"
+                    android:paddingEnd="13dp"
+                    android:text="@string/email"
+                    android:textAppearance="@style/fieldInfo"
+                    android:gravity="center_vertical"
+                    />
+
+                <EditText
+                    android:id="@+id/email_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="24dp"
+                    android:paddingStart="13dp"
+                    android:paddingEnd="13dp"
+                    android:background="#F6F6F9"
+                    android:gravity="center_vertical"
+                    android:inputType="textEmailAddress"
+                    android:text="@string/test_email"
+                    android:textAppearance="@style/value" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:paddingTop="5dp"
+                android:text="@string/private_text"
+                style="@style/private_text"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/frame_579"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_weight="10"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/tour_text"
+                android:textAppearance="@style/cost2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/fuel_fee_text"
+                android:textAppearance="@style/cost2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/service_fee_text"
+                android:textAppearance="@style/cost2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/sum_text"
+                android:textAppearance="@style/cost2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_weight="10"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/tour_cost"
+                android:textAppearance="@style/aboutInfo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/fuel_fee"
+                android:textAppearance="@style/aboutInfo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/service_cost"
+                android:textAppearance="@style/aboutInfo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/sum"
+                android:textAppearance="@style/aboutInfo" />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bars_bars"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bar">
+
+            <Button
+                android:id="@+id/payButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="28dp"
+                android:backgroundTint="@color/blue"
+                android:text="@string/paying_button_text"
+                android:textAppearance="@style/button"
+                app:cornerRadius="15dp" />
 
         </LinearLayout>
 

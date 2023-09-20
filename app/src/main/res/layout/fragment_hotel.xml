@@ -25,6 +25,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/frame_579"
+            android:paddingBottom="10dp"
             android:orientation="vertical">
 
             <View
@@ -59,7 +60,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginStart="3dp"
+                    android:layout_marginStart="10dp"
                     android:height="19sp"
                     android:text="@string/rating"
                     android:textAppearance="@style/rating" />
@@ -232,7 +233,7 @@
                     android:id="@+id/group_3"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:gravity="center_vertical"
+                    android:gravity="center"
                     android:layout_marginTop="5dp"
                     android:clickable="true"
                     android:focusable="true"
@@ -287,7 +288,7 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="10dp"
                     android:layout_marginStart="15dp"
-                    android:layout_marginEnd="30dp"
+                    android:layout_marginEnd="25dp"
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/vector_56" />
 
@@ -295,7 +296,7 @@
                     android:id="@+id/group_4"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
                     android:layout_marginTop="5dp"
                     android:clickable="true"
                     android:focusable="true">
@@ -348,7 +349,7 @@
                     android:id="@+id/vector_561"
                     android:layout_width="match_parent"
                     android:layout_marginStart="15dp"
-                    android:layout_marginEnd="30dp"
+                    android:layout_marginEnd="25dp"
                     android:layout_height="3dp"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="10dp"
@@ -359,7 +360,7 @@
                     android:id="@+id/group_5"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
                     android:layout_marginBottom="15dp"
                     android:clickable="true"
                     android:focusable="true">

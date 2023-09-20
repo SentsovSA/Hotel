@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Hotel</string>
     <string name="title">Отель</string>
-    <string name="rating">Охуенно</string>
+    <string name="rating">Отлично</string>
     <string name="star">star</string>
     <string name="address">Madinat Makadi, Safaga Road, Makadi Bay, Египет</string>
     <string name="cost">от 111 111 ₽</string>
@@ -27,4 +27,33 @@
     <string name="back_arrow_btn">back_arrow_btn</string>
     <string name="roompic">roomPic</string>
     <string name="value">+7 (951) 555–99–00</string>
+    <string name="phone_number">Номер телефона</string>
+    <string name="email">Почта</string>
+    <string name="Super">Супер!</string>
+    <string name="confirming">Подтверждение заказа №104893 может занять некоторое время (от 1 часа до суток).\nКак только мы получим ответ от туроператора, вам на почту придет уведомление.</string>
+    <string name="accepting_order">Ваш заказ принят в работу</string>
+    <string name="paying_button_text">Оплатить 198 036 ₽</string>
+    <string name="sum">198 036 ₽</string>
+    <string name="service_cost">2 136 ₽</string>
+    <string name="fuel_fee">9 300 ₽</string>
+    <string name="tour_cost">186 600 ₽</string>
+    <string name="sum_text">К оплате</string>
+    <string name="service_fee_text">Сервисный сбор</string>
+    <string name="fuel_fee_text">Топливный сбор</string>
+    <string name="tour_text">Тур</string>
+    <string name="test_email">test@test.ru</string>
+    <string name="customer_info_text">Информация о покупателе</string>
+    <string name="all_inclusive">Все включено</string>
+    <string name="standart_text">Стандартный с видом на бассейн или сад</string>
+    <string name="seven_nights">7 ночей</string>
+    <string name="dates">19.09.2023 – 27.09.2023</string>
+    <string name="egypt_hugarda">Египет, Хургада</string>
+    <string name="saint_p">Санкт-Петербург</string>
+    <string name="feeding">Питание</string>
+    <string name="room">Номер</string>
+    <string name="nights">Кол-во ночей</string>
+    <string name="dates_text">Даты</string>
+    <string name="country_city">Страна, город</string>
+    <string name="departing">Вылет из</string>
+    <string name="private_text">Эти данные никому не передаются. После оплаты мы вышли чек на указанный вами номер и почту</string>
 </resources>
